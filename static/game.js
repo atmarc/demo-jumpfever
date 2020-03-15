@@ -216,7 +216,7 @@ const cnv = document.getElementById("mycanvas")
 cnv.height = document.documentElement.clientHeight - 50;
 
 const d = new drawTool("mycanvas")
-const g = new Game(3247, [1,2,3,4])
+const g = new Game(Math.random()*9999, [1,2,3,4])
 g.start()
 var updateAll = () => g.update()
 
